@@ -5,7 +5,13 @@ import {
   FieldPacket,
   RowDataPacket,
 } from 'mysql2/promise';
-
+import {
+  DB_HOST,
+  DB_PORT,
+  DB_USERNAME,
+  DB_PASSWORD,
+  DB_DATABASE,
+} from 'src/config';
 @Injectable()
 export class DatabaseService {
   private connection: Connection;

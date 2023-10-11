@@ -1,4 +1,4 @@
-import { SftpService } from './sftp.service';
+import { SftpService } from '../files/sftp.service';
 import { Test, TestingModule } from '@nestjs/testing';
 
 describe('SftpService', () => {

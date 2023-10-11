@@ -1,5 +1,8 @@
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env' });
+
 import { Test, TestingModule } from '@nestjs/testing';
-import { DatabaseService } from './database.service';
+import { DatabaseService } from '../database/database.service';
 
 describe('DatabaseService', () => {
   let service: DatabaseService;

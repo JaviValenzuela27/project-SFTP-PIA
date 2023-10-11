@@ -1,5 +1,5 @@
-import { SftpService } from './files/sftp.service';
-import { DatabaseService } from './database/database.service';
+import { SftpService } from '../files/sftp.service';
+import { DatabaseService } from '../database/database.service';
 import { Test, TestingModule } from '@nestjs/testing';
 
 describe('FILES-SFTP-BDD', () => {
