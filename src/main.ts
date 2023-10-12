@@ -22,7 +22,7 @@ async function bootstrap() {
   app.use(cors(corsOption));
   //Configuracion para documentacion en Swagger
   const config = new DocumentBuilder()
-    .setTitle('Files Management PIA')
+    .setTitle("File's Management PIA")
     .setDescription('A system to keep files under control.')
     .setVersion('1.0')
     .addTag('Files')

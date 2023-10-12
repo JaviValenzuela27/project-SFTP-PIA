@@ -13,13 +13,14 @@ import {
   DB_DATABASE,
 } from 'src/config';
 @Injectable()
+//Clase para gestion de la bdd
 export class DatabaseService {
   private connection: Connection;
 
   constructor() {
     this.connectToDatabase();
   }
-
+  //Metodo para conexion a la bdd (Gestionarlo con .env)
   async connectToDatabase() {
     this.connection = await createConnection({
       host: '10.120.1.52',
@@ -29,13 +30,13 @@ export class DatabaseService {
       database: 'smsdev',
     });
   }
-
+  //Metodo para cerrar la conexion con la bdd
   async closeDatabaseConnection() {
     if (this.connection) {
       await this.connection.end();
     }
   }
-
+  //Metodo para realizar consultas a la bdd
   async query(
     sql: string,
     values: any[] = [],
