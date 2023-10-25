@@ -25,7 +25,7 @@ async function bootstrap() {
     .setTitle("File's Management PIA")
     .setDescription('A system to keep files under control.')
     .setVersion('1.0')
-    .addTag('Files')
+    // .addTag('Files')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
